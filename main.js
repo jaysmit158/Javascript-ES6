@@ -1,57 +1,57 @@
-var inputForm = document.querySelector('.search-input');
-var svg = document.querySelector('.icon-search');
+const inputForm = document.querySelector('.search-input');
+const svg = document.querySelector('.icon-search');
             
-var headerPrimary = document.getElementsByClassName('header-primary')[0];
-var productLink = document.getElementsByClassName('productlink')[0];
-var supportLink = document.getElementsByClassName('supportlink')[0];
-var aboutLink = document.getElementsByClassName('aboutlink')[0];
-var contactLink = document.getElementsByClassName('contactlink')[0];
-var productNav = document.getElementsByClassName('nav-secondary')[0];
-var sub = document.getElementsByClassName('sub');
+const headerPrimary = document.getElementsByClassName('header-primary')[0];
+const productLink = document.getElementsByClassName('productlink')[0];
+const supportLink = document.getElementsByClassName('supportlink')[0];
+const aboutLink = document.getElementsByClassName('aboutlink')[0];
+const contactLink = document.getElementsByClassName('contactlink')[0];
+const productNav = document.getElementsByClassName('nav-secondary')[0];
+const sub = document.getElementsByClassName('sub');
 
-var aboutHeading= document.querySelector('#aboutmenu h2');
+const aboutHeading= document.querySelector('#aboutmenu h2');
 
-var commercialMenu = document.getElementById('commercialmenu');
-var commercialSub = document.getElementById('commercialsub');
+const commercialMenu = document.getElementById('commercialmenu');
+const commercialSub = document.getElementById('commercialsub');
 
-var industrialMenu = document.getElementById('industrialmenu');
-var industrialSub = document.getElementById('industrialsub');
+const industrialMenu = document.getElementById('industrialmenu');
+const industrialSub = document.getElementById('industrialsub');
 
-var foodserviceMenu = document.getElementById('foodservicemenu');
-var foodserviceSub = document.getElementById('foodservicesub');
+const foodserviceMenu = document.getElementById('foodservicemenu');
+const foodserviceSub = document.getElementById('foodservicesub');
 
-var marineMenu = document.getElementById('marinemenu');
-var marineSub = document.getElementById('marinesub');
+const marineMenu = document.getElementById('marinemenu');
+const marineSub = document.getElementById('marinesub');
 
-var packagedsystemMenu = document.getElementById('packagedsystemmenu');
-var packagedsystemSub = document.getElementById('packagedsystemsub');
+const packagedsystemMenu = document.getElementById('packagedsystemmenu');
+const packagedsystemSub = document.getElementById('packagedsystemsub');
 
-var productCategories = [productNav, commercialSub, industrialSub, foodserviceSub, marineSub, packagedsystemSub];
+const productCategories = [productNav, commercialSub, industrialSub, foodserviceSub, marineSub, packagedsystemSub];
 
-var electricLo = document.getElementsByClassName('electricLo');
-var electricHi = document.getElementsByClassName('electricHi');
-var gas = document.getElementsByClassName('gas');
-var steam = document.getElementsByClassName('steam');
-var indirect = document.getElementsByClassName('indirect');
-var storage = document.getElementsByClassName('storage');
-var specialPurpose = document.getElementsByClassName('specialpurpose');
-var marine = document.getElementsByClassName('marine');
-var elements = document.getElementsByClassName('elements');
+const electricLo = document.getElementsByClassName('electricLo');
+const electricHi = document.getElementsByClassName('electricHi');
+const gas = document.getElementsByClassName('gas');
+const steam = document.getElementsByClassName('steam');
+const indirect = document.getElementsByClassName('indirect');
+const storage = document.getElementsByClassName('storage');
+const specialPurpose = document.getElementsByClassName('specialpurpose');
+const marine = document.getElementsByClassName('marine');
+const elements = document.getElementsByClassName('elements');
 
-var supportMenu = document.getElementById('supportmenu');
-var aboutMenu = document.getElementById('aboutmenu');
-var contactMenu = document.getElementById('contactmenu');
-var resourcetab = document.getElementById('resourcetab');
-var supporttab = document.getElementById('supporttab');
-var infolists = document.getElementsByClassName('info-lists');
-var socialtab = document.getElementById('socialtab');
-var newstab = document.getElementById('newstab');
-var comapnytab = document.getElementById('companytab');
-var socialtab = document.getElementById('socialtab');
-var contacttab = document.getElementById('contacttab');
+const supportMenu = document.getElementById('supportmenu');
+const aboutMenu = document.getElementById('aboutmenu');
+const contactMenu = document.getElementById('contactmenu');
+const resourcetab = document.getElementById('resourcetab');
+const supporttab = document.getElementById('supporttab');
+const infolists = document.getElementsByClassName('info-lists');
+const socialtab = document.getElementById('socialtab');
+const newstab = document.getElementById('newstab');
+const comapnytab = document.getElementById('companytab');
+const socialtab = document.getElementById('socialtab');
+const contacttab = document.getElementById('contacttab');
 
 
-var initialStyle = () => {
+const initialStyle = () => {
     productNav.style.backgroundColor = "white";
     productNav.style.color = "black";
 }
@@ -69,8 +69,8 @@ inputForm.style.display = "none";
 
 window.onscroll = changePos;
 
-function changePos() {
-    var header = document.getElementsByClassName("sectionSelection")[0];
+const changePos = () => {
+    let header = document.getElementsByClassName("sectionSelection")[0];
     if (window.pageYOffset > 345 && window.screen.width > 1025) {
         header.style.position = "fixed";
         header.style.top = "0";
@@ -426,80 +426,80 @@ packagedsystemSub.onmouseleave  = () =>  {
 
 //Electric Low Capacity
 
-var modelE = document.querySelectorAll('.modelE');
-var modelHEHSE = document.querySelectorAll('.modelHEHSE');
-var modelPBX = document.querySelectorAll('.modelPBX');
-var modelCE25 = document.querySelectorAll('.modelCE25');
-var modelCE110 = document.querySelectorAll('.modelCE110');
-var modelTankless = document.querySelectorAll('.modelTankless');
-var modelJ1 = document.querySelector('#modelJ1');
-var modelJ25 = document.querySelector('#modelJ25');
+const modelE = document.querySelectorAll('.modelE');
+const modelHEHSE = document.querySelectorAll('.modelHEHSE');
+const modelPBX = document.querySelectorAll('.modelPBX');
+const modelCE25 = document.querySelectorAll('.modelCE25');
+const modelCE110 = document.querySelectorAll('.modelCE110');
+const modelTankless = document.querySelectorAll('.modelTankless');
+const modelJ1 = document.querySelector('#modelJ1');
+const modelJ25 = document.querySelector('#modelJ25');
 
 // //Electric Hight Capacity
 
-var modelJ = document.querySelector('#modelJ');
-var modelJTX = document.querySelector('#modelJTX');
-var modelSE = document.querySelectorAll('.modelSE');
-var modelHXTX = document.querySelectorAll('.modelHXTX');
-var modelSHH = document.querySelectorAll('.modelSHH');
+const modelJ = document.querySelector('#modelJ');
+const modelJTX = document.querySelector('#modelJTX');
+const modelSE = document.querySelectorAll('.modelSE');
+const modelHXTX = document.querySelectorAll('.modelHXTX');
+const modelSHH = document.querySelectorAll('.modelSHH');
 
 // //Gas Fired
 
-var modelNX = document.querySelectorAll('.modelNX');
-var modelNXT = document.querySelectorAll('.modelNXT');
-var modelDGX = document.querySelector('#modelDGX');
-var modelPT = document.querySelector('#modelPT');
-var modelGSE = document.querySelectorAll('.modelGSE');
+const modelNX = document.querySelectorAll('.modelNX');
+const modelNXT = document.querySelectorAll('.modelNXT');
+const modelDGX = document.querySelector('#modelDGX');
+const modelPT = document.querySelector('#modelPT');
+const modelGSE = document.querySelectorAll('.modelGSE');
 
 // //Steam Fired
 
-var modelST = document.querySelectorAll('.modelST');
-var modelSTX = document.querySelectorAll('.modelSTX');
-var modelPS = document.querySelectorAll('.modelPS');
-var modelF = document.querySelectorAll('.modelF');
+const modelST = document.querySelectorAll('.modelST');
+const modelSTX = document.querySelectorAll('.modelSTX');
+const modelPS = document.querySelectorAll('.modelPS');
+const modelF = document.querySelectorAll('.modelF');
 
 // //Indirect
 
-var modelBWX = document.querySelectorAll('.modelBWX');
-var modelBW = document.querySelectorAll('.modelBW');
-var modelTransflow = document.querySelectorAll('.modelTransflow');
-var modelSLN = document.querySelectorAll('.modelSLN');
-var modelBWP = document.querySelectorAll('.modelBWP');
-var modelBWXP = document.querySelectorAll('.modelBWXP');
+const modelBWX = document.querySelectorAll('.modelBWX');
+const modelBW = document.querySelectorAll('.modelBW');
+const modelTransflow = document.querySelectorAll('.modelTransflow');
+const modelSLN = document.querySelectorAll('.modelSLN');
+const modelBWP = document.querySelectorAll('.modelBWP');
+const modelBWXP = document.querySelectorAll('.modelBWXP');
 
 // //Storage
 
-var modelTK = document.querySelectorAll('.modelTK');
-var modelBuffer =  document.querySelectorAll('.modelBuffer');
+const modelTK = document.querySelectorAll('.modelTK');
+const modelBuffer =  document.querySelectorAll('.modelBuffer');
 
 // //Special Purpose
 
-var modelCR = document.querySelectorAll('.modelCR');
-var modelER = document.querySelector('#modelER');
-var modelV = document.querySelector('#modelV');
-var modelETX = document.querySelector('#modelETX');
-var modelHD = document.querySelector('#modelHD');
-var modelD = document.querySelector('#modelD');
-var modelEMV = document.querySelector('#modelEMV');
-var packagedSkid = document.querySelector('#packagedSkid');
+const modelCR = document.querySelectorAll('.modelCR');
+const modelER = document.querySelector('#modelER');
+const modelV = document.querySelector('#modelV');
+const modelETX = document.querySelector('#modelETX');
+const modelHD = document.querySelector('#modelHD');
+const modelD = document.querySelector('#modelD');
+const modelEMV = document.querySelector('#modelEMV');
+const packagedSkid = document.querySelector('#packagedSkid');
 
 // //Marine
 
-var modelME = document.querySelector('#modelME');
-var modelMSH = document.querySelector('#modelMSH');
-var modelMSE = document.querySelector('#modelMSE');
-var modelMHXTX = document.querySelector('#modelMHXTX');
-var model177 = document.querySelector('#model177');
-var integratedSkid = document.querySelector('#integratedSkid');
+const modelME = document.querySelector('#modelME');
+const modelMSH = document.querySelector('#modelMSH');
+const modelMSE = document.querySelector('#modelMSE');
+const modelMHXTX = document.querySelector('#modelMHXTX');
+const model177 = document.querySelector('#model177');
+const integratedSkid = document.querySelector('#integratedSkid');
 
 // //Elements and Exchangers
 
-var immersionHeaters = document.querySelectorAll('.immersionHeaters');
-var heatingCoils = document.querySelectorAll('.heatingCoils');
-var sstp = document.querySelectorAll('.sstp');
+const immersionHeaters = document.querySelectorAll('.immersionHeaters');
+const heatingCoils = document.querySelectorAll('.heatingCoils');
+const sstp = document.querySelectorAll('.sstp');
 
-var image = document.querySelectorAll('.image-wrapper');
-var marineImage = document.querySelector('#marine-image');
+const image = document.querySelectorAll('.image-wrapper');
+const marineImage = document.querySelector('#marine-image');
 
 
 for (let i = 0; i < modelE.length; i++) {
@@ -934,22 +934,22 @@ for (let i = 0; i < sstp.length; i++) {
 }
 
 /************************* Product Page Slider******************************/
-var slideIndex = 1;
+const slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+const plusSlides = (n) => {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+const currentSlide = (n) => {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  var text = document.getElementsByClassName("text");
+const showSlides = (n) => {
+  const i;
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  const text = document.getElementsByClassName("text");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
