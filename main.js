@@ -65,27 +65,45 @@ svg.onclick = () => {
 
 /***************************** Fixed Header ************************************/
 
-window.onscroll = changePos;
-
-const changePos = () => {
+window.addEventListener('scroll', () => {
     let header = document.getElementsByClassName("sectionSelection")[0];
-    if (window.pageYOffset > 345 && window.screen.width > 1025) {
-      header.style.position = "fixed";
-      header.style.top = "0";
-      header.style.background = "#003EB1";
-    } else if (window.pageYOffset < 345 && window.screen.width > 1025) {
-      header.style.position = "fixed";
-      header.style.bottom = "0vh";
-      header.style.top = "";
-      header.style.background = "rgba(0,61,166,0.65)";
+    if (window.pageYOffset > 345 && window.screen.width > 1200) {
+        header.style.position = "fixed";
+        header.style.top = "-1px";
+        header.style.background = "#003EB1";
+    } else if (window.pageYOffset < 345 && window.screen.width > 1200) {
+        header.style.position = "fixed";
+        header.style.bottom = "0vh";
+        header.style.top = "";
+        header.style.background = "rgba(0,61,166,0.65)";
     } else {
-      header.style.position = "static";
-      // header.style.bottom = "0vh";
-      header.style.left = "auto";
-      header.style.width = "100%";
+        header.style.display = "none";
     }
-  }
-  /******************************** Product Link *****************************/
+
+
+});
+
+window.addEventListener('scroll', () => {
+    let header = document.getElementsByClassName("sectionSelection2")[0];
+    if (window.pageYOffset > 345 && window.screen.width > 1200) {
+
+        header.style.position = "fixed";
+        header.style.top = "-1px";
+        header.style.background = "#003EB1";
+    } else if (window.pageYOffset < 345 && window.screen.width > 1200) {
+        header.style.position = "fixed";
+        header.style.bottom = "0vh";
+        header.style.top = "";
+        header.style.background = "rgba(0,61,166,0.65)";
+    } else {
+        header.style.display = "none";
+    }
+
+
+});
+
+
+/******************************** Product Link *****************************/
 productLink.onclick = () => {
 
   productNav.style.display == 'block' ? productNav.style.display = "none" : productNav.style.display = "block";
@@ -946,18 +964,18 @@ const currentSlide = (n) => {
 }
 
 const showSlides = (n) => {
-  const i;
-  const slides = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("dot");
-  const text = document.getElementsByClassName("text");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  let text = document.getElementsByClassName("text");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[0].style.width = "14%";
     slides[1].style.width = "70%";
     slides[2].style.width = "14%";
   }
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   text[slideIndex - 1].style.display = "inline-block";
