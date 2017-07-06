@@ -66,41 +66,47 @@ svg.onclick = () => {
 /***************************** Fixed Header ************************************/
 
 window.addEventListener('scroll', () => {
-    let header = document.getElementsByClassName("sectionSelection")[0];
-    if (window.pageYOffset > 345 && window.screen.width > 1200) {
-        header.style.position = "fixed";
-        header.style.top = "-1px";
-        header.style.background = "#003EB1";
-    } else if (window.pageYOffset < 345 && window.screen.width > 1200) {
-        header.style.position = "fixed";
-        header.style.bottom = "0vh";
-        header.style.top = "";
-        header.style.background = "rgba(0,61,166,0.65)";
-    } else {
-        header.style.display = "none";
-    }
+  let header = document.getElementsByClassName("sectionSelection")[0];
+  if (window.pageYOffset > 345 && window.screen.width > 1200) {
+    header.style.position = "fixed";
+    header.style.top = "-1px";
+    header.style.background = "#003EB1";
+  } else if (window.pageYOffset < 345 && window.screen.width > 1200) {
+    header.style.position = "fixed";
+    header.style.bottom = "0vh";
+    header.style.top = "";
+    header.style.background = "rgba(0,61,166,0.65)";
+  } else {
+    header.style.display = "none";
+  }
 
 
 });
 
 window.addEventListener('scroll', () => {
-    let header = document.getElementsByClassName("sectionSelection2")[0];
-    if (window.pageYOffset > 345 && window.screen.width > 1200) {
+  let header = document.getElementsByClassName("sectionSelection2")[0];
+  if (window.pageYOffset > 345 && window.screen.width > 1200) {
 
-        header.style.position = "fixed";
-        header.style.top = "-1px";
-        header.style.background = "#003EB1";
-    } else if (window.pageYOffset < 345 && window.screen.width > 1200) {
-        header.style.position = "fixed";
-        header.style.bottom = "0vh";
-        header.style.top = "";
-        header.style.background = "rgba(0,61,166,0.65)";
-    } else {
-        header.style.display = "none";
-    }
+    header.style.position = "fixed";
+    header.style.top = "-1px";
+    header.style.background = "#003EB1";
+  } else if (window.pageYOffset < 345 && window.screen.width > 1200) {
+    header.style.position = "fixed";
+    header.style.bottom = "0vh";
+    header.style.top = "";
+    header.style.background = "rgba(0,61,166,0.65)";
+  } else {
+    header.style.display = "none";
+  }
 
 
 });
+
+document.onmouseleave = () => {
+  for (let i = 0; i < sub.length; i++) {
+    sub[i].style.display = "none";
+  }
+}
 
 
 /******************************** Product Link *****************************/
